@@ -48,7 +48,7 @@ hr {
     width: 100%;
     height: 100vh;
     min-height: 820px;
-    background: url(/src/images/bgIntro.jpg) center no-repeat;
+    background: url(/images/bgIntro.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -388,7 +388,7 @@ hr {
 }
 
 .section--devices {
-    background: url("./src/images/design/design_bg.jpg") center no-repeat;
+    background: url("./images/design/design_bg.jpg") center no-repeat;
     background-size: cover;
 
     padding-bottom: 0;
@@ -400,13 +400,13 @@ hr {
 }
 
 .section--clients {
-    background: url("./src/images/client_bg.jpg") center no-repeat;
+    background: url("./images/client_bg.jpg") center no-repeat;
     background-size:cover;
 }
 
 .section--map {
     padding: 60px 0;
-    background: url("./src/images/map_bg.jpg") center no-repeat;
+    background: url("./images/map_bg.jpg") center no-repeat;
     background-size: cover;
 
 }
