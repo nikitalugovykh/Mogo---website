@@ -96,10 +96,7 @@ window.addEventListener('resize', () => {
   }
 })
 
-// Slider
-
-
-
+// Touch Slider
 
 let slider = document.querySelector('.slider'),
   sliderList = slider.querySelector('.slider__wrapper'),
@@ -314,3 +311,10 @@ window.addEventListener('resize', () => {
 
 
 // .................
+
+// Slider2 
+
+const reviews = document.querySelector('.reviews');
+
+
+// ................
