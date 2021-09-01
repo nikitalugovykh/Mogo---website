@@ -430,7 +430,18 @@ hr {
     transition: all 0.4s ease;
   }
   
-
+@media (max-width: 768px) {
+    .fidex-navigation {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        background-color: var(--light-pink-color);
+    }
+    .intro {
+        margin-top: -30px;
+    }
+}
 /* Section */
 
 .section {
@@ -729,7 +740,14 @@ hr {
     cursor: pointer;
 
     position: relative;
+    transition: all 0.2s linear;
+}
 
+.accordion__header:hover {
+    background-color: var(--light-grey-color);
+}
+.accordion__header:active {
+    background-color: var(--turquoise-color);
 }
 
 .accordion__item.active .accordion__header {
@@ -1649,6 +1667,7 @@ hr {
     /* Card */
     .card {
         margin-top: 40px;
+        margin-bottom: 20px;
         justify-content: center;
     }
     .card__item {

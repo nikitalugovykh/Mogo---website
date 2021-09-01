@@ -2,6 +2,8 @@ const page = document.querySelector('.page');
 const asideNavbar = document.querySelector(".fidex-navigation");
 const mainNavbar = document.querySelector(".nav");
 
+//  Navigation 
+
 const createSectionNav = (root, nav) => {
     let currentActiveStep = nav.querySelector(".nav-active");
   
@@ -45,6 +47,10 @@ const createSectionNav = (root, nav) => {
 createSectionNav(page, asideNavbar);
 createSectionNav(page, mainNavbar);
 
+// ...............................
+
+// For hide aside navigation
+
 const intro = document.querySelector('.intro');
 const nav = document.querySelector('.fidex-navigation');
 function showAsideNavbar() {
@@ -57,3 +63,15 @@ function showAsideNavbar() {
 
 document.addEventListener('scroll', showAsideNavbar)
   
+// ..............................
+
+
+// For showing text in accordion
+
+const accordion = document.querySelector('.accordion');
+
+accordion.addEventListener('click', ({ target }) => {
+  if (!target.closest('.accordion__item')) return
+  const item = target.closest('.accordion__item');
+  item.classList.toggle('active');
+})
