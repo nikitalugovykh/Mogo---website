@@ -75,3 +75,23 @@ accordion.addEventListener('click', ({ target }) => {
   const item = target.closest('.accordion__item');
   item.classList.toggle('active');
 })
+
+// ...............................
+
+// Burger
+
+const burgerBtn = document.querySelector('#nav-toggle');
+
+burgerBtn.addEventListener('click', showMenu);
+
+function showMenu() {
+  burgerBtn.classList.toggle('active');
+  mainNavbar.classList.toggle('active');
+}
+window.addEventListener('resize', () => {
+  console.log('lol');
+  if (burgerBtn.classList.contains('active')) {
+    burgerBtn.classList.remove('active');
+    mainNavbar.classList.remove('active');
+  }
+})
