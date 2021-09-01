@@ -55,7 +55,7 @@ hr {
     align-items: center;
     width: 100%;
     height: 100vh;
-    min-height: 820px;
+    /* min-height: 820px; */
     background: url("./../images/bgIntro.jpg") center no-repeat;
     background-size: cover;
 }
@@ -74,8 +74,7 @@ hr {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--white-color);
-
-    
+    user-select: none;
 }
 
 .intro__title:after {
@@ -97,6 +96,7 @@ hr {
     line-height: 1.2;
     font-weight: 400;
     color: var(--white-color);
+    user-select: none;
 }
 
 /* Button */
@@ -355,9 +355,18 @@ hr {
     flex-direction: column;
     position: fixed;
     top: 2rem;
-    right: 2rem;
-    width: 20%;
+    right: 1.5rem;
+    width: 22%;  
   } 
+  .text {
+      visibility: hidden;
+      transform: translateX(200px);
+      transition: transform 0.2s linear;
+  }
+  .fidex-navigation:hover .text{
+    visibility: visible;
+    transform: translateX(0);
+  }
   .dot {
     position: absolute;
     width: 10px;
@@ -377,7 +386,7 @@ hr {
     transform: translate(50%, -50%);
     width: 10px;
     height: 10px;
-    background-color: var(--main-blue);
+    background-color: var(--light-pink-color);
     border-radius: 50%;
     transition: 0.4s ease;
   }
@@ -385,16 +394,16 @@ hr {
   .nav-active .dot {
     width: 26px;
     height: 26px;
-    border: 1px solid var(--active-blue);
+    border: 1px solid var(--light-pink-color);
     right: -8px;
   }
   
   .nav-active .dot:after {
     width: 16px;
     height: 16px;
-    background-color: var(--active-blue);
+    background-color: var(--light-pink-color);
   }
-  
+
   .step {
     position: relative;
     padding-right: 22px;
@@ -408,7 +417,7 @@ hr {
   }
   
   .nav-active .text {
-    color: var(--active-blue);
+    color: var(--light-pink-color);
     font-size: 20px;
     margin: 10px 0 10px auto;
   }
@@ -416,7 +425,7 @@ hr {
   .line {
     height: 44px;
     width: 1px;
-    background-color: var(--main-blue);
+    background-color: var(--light-pink-color);
     margin: -10px 4px -10px auto;
     transition: all 0.4s ease;
   }
@@ -1152,7 +1161,8 @@ hr {
     font-weight: 400;
     color: var(--grey-color);
     height: 100px;
-    overflow: scroll;
+    /* overflow: scroll; */
+    overflow-x: hidden;
 }
 .blog__footer {
     font-family: 'Roboto', sans-serif;
