@@ -90,20 +90,6 @@
                     </div> 
                     
                 </div>
-                <!-- <div class="intro__slider">
-                    <div class="container">
-                        <div class="slider__inner">
-                            <div class="slider__item active"><span class="slider__num">01</span> <span class="slider__text">Intro</span>
-                            </div>
-                            <div class="slider__item"><span class="slider__num">02</span> <span class="slider__text">Work</span>
-                            </div>
-                            <div class="slider__item"><span class="slider__num">03</span> <span class="slider__text">About</span>
-                            </div>
-                            <div class="slider__item"><span class="slider__num">04</span> <span class="slider__text">Contacts</span>
-                            </div>
-                        </div>  
-                    </div>
-                </div> -->
             </section>
 
             <!-- About -->
@@ -295,11 +281,11 @@
             <!-- Reviews -->
 
             <div class="section section--grey">
-                <div class="container">
-                    <div class="reviews">
+                <div class="container slider">
+                    <div class="reviews slider__wrapper">
 
-                        <div data-slider>
-                            <div class="reviews__item ">
+                        <div class="slider-track">
+                            <div class="reviews__item slider__item" data-num="1">
                                 <img class="reviews__img" src="./images/clients/reviews_pic1.png" alt="pic_author">
                                 <div class="reviews__text">
                                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -307,7 +293,7 @@
                                 <div class="reviews__author">Jon Doe</div>
                             </div>
 
-                            <div class="reviews__item ">
+                            <div class="reviews__item slider__item" data-num="2">
                                 <img class="reviews__img" src="./images/clients/reviews_pic1.png" alt="pic_author">
                                 <div class="reviews__text">
                                     “Lorem mque qui incidunt unde? Repellat molestias doloremque dicta at? Debitis reiciendis quis dolores omnis nemo obcaecati praesentium!.”
@@ -315,7 +301,7 @@
                                 <div class="reviews__author">Jon Smith</div>
                             </div>
 
-                            <div class="reviews__item ">
+                            <div class="reviews__item slider__item" data-num="3">
                                 <img class="reviews__img" src="./images/clients/reviews_pic1.png" alt="pic_author">
                                 <div class="reviews__text">
                                     “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis laboriosam, mollitia deserunt iusto quod.”
@@ -325,6 +311,8 @@
                         </div>
                     </div>
                 </div>
+                <button class="slider__control slider__control-left icon-arrow-left" aria-label='Show previous quote'></button>
+                <button class="slider__control slider__control-right icon-arrow-right" aria-label='Show next quote'></button>
             </div>
 
             <!-- Card -->
